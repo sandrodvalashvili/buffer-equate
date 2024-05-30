@@ -1,0 +1,31 @@
+{
+  "name": "buffer-equate",
+  "version": "1.0.0",
+  "description": "This function compares a buffer to a string, number, or an array of numbers and returns a boolean indicating whether they are equivalent.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandrodvalashvili/buffer-equate.git"
+  },
+  "keywords": [
+    "buffer",
+    "equate",
+    "equals",
+    "string",
+    "number[]",
+    "number",
+    "array",
+    "equal",
+    "buf"
+  ],
+  "author": "sandro dvalashvili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandrodvalashvili/buffer-equate/issues"
+  },
+  "homepage": "https://github.com/sandrodvalashvili/buffer-equate#readme"
+}
