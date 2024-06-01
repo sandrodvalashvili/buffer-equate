@@ -6,7 +6,7 @@
  *   - A string of even length is treated as a hexadecimal representation.
  * 
  * - If the input is a number:
- *   - The number should be a positive integer (max: 2147483647).
+ *   - The number should be a positive integer (max: 4294967295).
  *   - The number is transcoded to its buffer representation.
  * 
  * - If the input is an array of numbers:
@@ -26,13 +26,11 @@ export default function (b, i) {
         typeof i == "number"
         ?
         Buffer.from(((i) => {
-            let a = [i];
-            let s = a[0] >> 8;
-            while (s != 0) {
-                a.unshift(s);
-                a[1] = a[1] - s * 256;
-                s = a[0] >> 8;
-            }
+            const a = [];
+            do {
+                a.unshift(i & 255);
+                i >>>= 8;
+            } while (i > 0);
             return a
         })(i))
         :
