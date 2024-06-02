@@ -1,6 +1,6 @@
 {
   "name": "buffer-equate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "buffer-equate is a versatile utility function for comparing buffers with strings, numbers, or arrays of numbers. It ensures accurate and efficient buffer comparison, accommodating various input types seamlessly.",
   "main": "index.js",
   "type": "module",
