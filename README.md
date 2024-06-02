@@ -6,7 +6,7 @@
 * Single character strings are treated as UTF-8 characters.
 * Even-length strings are interpreted as hexadecimal representations.
 ### Number Comparison:
-* Supports positive integers up to 2147483647.
+* Supports positive integers up to 4294967295.
 * Automatically converts numbers to their appropriate buffer > representations.
 ### Array of Numbers Comparison:
 * Each number in the array should be an integer (max value 255).

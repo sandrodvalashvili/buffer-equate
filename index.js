@@ -17,7 +17,7 @@
  * @param {string|number|number[]} i - The input to compare against the buffer.
  * @returns {boolean} - Returns true if the buffer equals the converted input, otherwise false.
  */
-export default function (b, i) {
+export default (b, i) => {
     return b.equals(
         typeof i == "string" && (i.length != 0 && i.length % 2 == 0 || i.length == 1)
         ?
